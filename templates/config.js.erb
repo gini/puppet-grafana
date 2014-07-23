@@ -14,8 +14,8 @@ function (Settings) {
       graphite: {
         type: 'graphite',
         <% if  @graphite_url != '' -%>
-        url: "<%= @graphite_url %>",<% else -%>
-        url: "http://<%= @graphite_host %>:<%= @graphite_port %>",<% end -%>
+        url: "<%= @graphite_url %>",<% else %>
+        url: "http://<%= @graphite_host %>:<%= @graphite_port %>",<% end %>
         default: true
       },
       influxdb: {
