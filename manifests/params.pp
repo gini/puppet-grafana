@@ -8,6 +8,7 @@ class grafana::params {
     $elasticsearch_port = 9200
     $graphite_host      = 'localhost'
     $graphite_port      = 80
+    $graphite_url       = ''
     $influxdb_host      = 'localhost'
     $influxdb_port      = 8086
     $influxdb_user      = 'root'

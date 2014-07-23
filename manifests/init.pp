@@ -10,6 +10,7 @@ class grafana (
     $elasticsearch_port = $grafana::params::elasticsearch_port,
     $graphite_host      = $grafana::params::graphite_host,
     $graphite_port      = $grafana::params::graphite_port,
+    $graphite_url       = $grafana::params::graphite_url,
     $influxdb_host      = $grafana::params::influxdb_host,
     $influxdb_port      = $grafana::params::influxdb_port,
     $influxdb_user      = $grafana::params::influxdb_user,

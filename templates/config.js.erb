@@ -5,7 +5,7 @@
  */
 define(['settings'],
 function (Settings) {
-  
+
 
   return new Settings({
 
@@ -13,7 +13,9 @@ function (Settings) {
     datasources: {
       graphite: {
         type: 'graphite',
-        url: "http://<%= @graphite_host %>:<%= @graphite_port %>",
+        <% if  @graphite_url != '' -%>
+        url: "<%= @graphite_url %>",<% else -%>
+        url: "http://<%= @graphite_host %>:<%= @graphite_port %>",<% end -%>
         default: true
       },
       influxdb: {
